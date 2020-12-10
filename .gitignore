@@ -1,0 +1,10 @@
+# uncomment the following to ignore specific folder / files
+
+.DS_Store
+.ipynb_checkpoints
+# data/
+# admin/
+# results/
+# *.tsv
+# *.csv
+# writing/
