@@ -2,6 +2,14 @@
 
 Structure template for computational research project
 
+
+## TODO
+
+* [ ] Write README template in cookiecutter folder
+* [ ] look into rclone/rsync scripts/automation
+* [ ] create Rmarkdown template
+* [ ] Update this document according to my changes
+
 ## Inspiration
 
 [Fantastic Work by Albert Henry](https://github.com/alhenry/project-template)
@@ -45,8 +53,8 @@ The default project structure is outlined below:
 |   └── meeting_notes.csv
 |
 ├── data/
-|   ├── iris.tsv
-|   └── mtcars.csv
+|   ├── input/
+|   └── output/
 |   
 ├── scripts/
 |   ├── s01_data_generation.sh
