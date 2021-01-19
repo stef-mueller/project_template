@@ -5,10 +5,10 @@ Structure template for computational research project
 
 ## TODO
 
-* [ ] Write README template in cookiecutter folder
+* [x] Write README template in cookiecutter folder
 * [ ] look into rclone/rsync scripts/automation
 * [ ] create Rmarkdown template
-* [ ] Update this document according to my changes
+* [x] Update this document according to my changes
 
 ## Inspiration
 
@@ -37,7 +37,7 @@ Structure template for computational research project
    `cd my_directory`
 3. Run `cookiecutter` pointing to project template git repo
 
-   `cookiecutter https://github.com/alhenry/project-template.git`
+   `cookiecutter https://github.com/stef-mueller/project_template`
 4. When prompted, enter the project title, project directory name, GitHub username,  GitHub repository name (make sure name is available), and [GitHub personal access token](#initial-set-up). Leave blank to use the default value (shown in square bracket).
 
 
@@ -52,15 +52,15 @@ The default project structure is outlined below:
 ├── admin/
 |   └── meeting_notes.csv
 |
-├── data/
-|   ├── input/
-|   └── output/
-|   
-├── scripts/
+├── code/
 |   ├── s01_data_generation.sh
 |   |── s02.1_calculate_desc_stats_table1.R
 |   └── s02.2_figure1.ipynb
 |
+├── data/
+|   ├── input/
+|   └── output/
+|   |
 ├── exploratory/
 |
 ├── results/
@@ -79,28 +79,8 @@ The default project structure is outlined below:
 
 * **.git** - hidden folder for git version control
 * **admin** - Admin documents, e.g. meeting notes, applications, ethical approvals, MTA
-* **data** - Read only data files used as input for analysis and results
-* **scripts** - Analysis scripts
+* **code** - Analysis scripts
+* **data** - data files used as input for analysis and results
 * **exploratory** - Scratch space for temporary output files / exploratory data analysis generated as part of the analysis, can be deleted before archiving
 * **results** - output of data analysis e.g. tables, figures, jupyter notebook
 * **writing** - Analysis write ups, subfolders can be created specifically for early analysis drafts and later on manuscript drafts and final editions ready for submission to specific journals (this can also include reviewer comments and reply)
-
-
-## References
-
-**File organization**
-
-- [A Quick Guide to Organizing Computational Biology Projects](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
-- [MIT Comm Kit - File Structure](https://mitcommlab.mit.edu/broad/commkit/file-structure/)
-- [The Turing Way - Research Data Management](https://the-turing-way.netlify.com/rdm/rdm.html)
-
-**Coding style**
-
-- General recommendations: [MIT Comm Kit - Coding and Comment Style](https://mitcommlab.mit.edu/broad/commkit/coding-and-comment-style/)
-- Python: [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
-- R: [tydyverse style guide](https://style.tidyverse.org/)
-
-**Other template**
-
-- [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
-- [R ProjectTemplate](http://projecttemplate.net/index.html)
